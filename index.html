@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio | Accueil </title>
+    <link rel="icon" href="./asset/img/ZZlogo.ico">
+    <link rel="stylesheet" href="./asset/css/style.css  ">
+</head>
+<body>
+
+  <!-- <div id="intro">
+    <p>Bienvenue sur le Portfolio de <br>Lucas Alazary !</p>
+  </div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+        var intro = document.getElementById('intro');
+        
+        setTimeout(function() {
+            intro.classList.add('hidden');
+        }, 4000);
+    });
+  </script> -->
+
+
+    <div class="container-nav">
+      <div class="image-text">
+        <!-- <img src="asset\img\Lucas.png" alt="Image"> -->
+          <br>
+          Lucas Alazary
+          <br>
+          BTS SIO
+        </div>
+
+        <ul class="navigation">
+          <li>
+            <a href="#profil">Présentation</a>
+          <ul><a href="#profil">Curriculum Vitae</a></ul>
+          <ul><a href="#Fiche-de-competence">Fiche de Compétence</a></ul>
+          <ul><a href="#competence">Compétence</a></ul>
+          <ul><a href="#Futur">Projet Futur</a></ul>
+        </li>
+          <li>
+            <a href="#ubisolutions">Entreprise</a>
+            <ul><a href="#ubisolutions">Mission Entreprise</a></ul>
+            <ul><a href="https://ubisolutions.net/" target="_blank">Ubisolutions.com</a></ul>
+        </li>
+          <li>
+            <a href="#Projet">Projet</a>
+            <ul><a href="#Projet">Projet N°1</a></ul>
+            <ul><a href="#Projet">Projet N°2</a></ul>
+            <ul><a href="#Projet">Projet N°3</a></ul>
+            <ul><a href="#Projet">Projet N°4</a></ul>
+            <!-- <ul><a href="#">Fiche descriptive Epreuve AP</a></ul> -->
+          </li>
+          <li>
+            <a href="#Ma-veille">La Veille Technologique</a>
+            <ul><a href="#Ma-veille">Ma Veille Technologique</a></ul>
+          </li>
+          <li>
+          <li><a href="#">Contact</a></li>        
+        </ul>
+        
+        <p class="additional-text">Copyright © Lucas Alazary 2024</p>
+
+        <button id="my-button" class="toggle-button">
+            <img src="asset\svg\arrow-right.svg" width="60px" height="60px" alt="Right Arrow">
+            <img src="asset\svg\arrow-left.svg" width="60px" height="60px" alt="Left Arrow">
+        </button>
+      </div>  
+
+<script>
+
+document.getElementById("my-button").addEventListener("click", function() {
+  var bouton = document.getElementById("my-button");
+  bouton.classList.add("rotate-center");
+  
+  setTimeout(function() {
+    bouton.classList.remove("rotate-center");
+  }, 1000);
+});
+
+</script>
+
+<script>
+const container = document.querySelector(".container-nav");
+const button = document.getElementById("my-button");
+const leftImage = button.querySelector("img:first-child");
+const rightImage = button.querySelector("img:last-child");
+let isShown = true;
+
+button.addEventListener("click", () => {
+  if (isShown) {
+    container.classList.add("container-nav--active");
+    setTimeout(() => {
+      isShown = false;
+    }, 500);
+  } else {
+    container.classList.remove("container-nav--active");
+    container.classList.add("container-nav--back");
+    setTimeout(() => {
+      container.classList.remove("container-nav--back");
+      isShown = true;
+    }, 500);
+  }
+
+  leftImage.classList.toggle("hidden");
+  rightImage.classList.toggle("hidden");
+
+  const tempSrc = leftImage.getAttribute("src");
+  leftImage.setAttribute("src", rightImage.getAttribute("src"));
+  rightImage.setAttribute("src", tempSrc);
+
+  const tempAlt = leftImage.getAttribute("alt");
+  leftImage.setAttribute("alt", rightImage.getAttribute("alt"));
+  rightImage.setAttribute("alt", tempAlt);
+});
+</script>
+
+<section id="profil">
+  <div class="container-profil">
+    <div class="text">
+        <h1>
+          Lucas
+          <br>
+          <span>Alazary</span>
+        </h1>
+        <div class="container-btn">
+          <span><br>
+          Je m'appelle Lucas Alazary, j'ai 19 ans.<br>
+          Je suis actuellement étudiant à Lyon<br> 
+          dans l'établissement ISITECH.<br>
+          En fin de seconde année de BTS option SLAM<br>
+          (Services Informatiques aux Organisations spécialité en Solutions Logicielles et Applications Métier.)<br>
+          Je me suis tourné tout naturellement vers cette option car je suis intéressé par la sécurité du réseau informatique et le développement Web.<br>
+        </span>
+        <a href="./asset/download/CV.pdf" target="_blank" class="main-btn">Curriculum Vitae</a>
+
+      </div>
+      </div>
+    <div class="image">
+      <img class=image-moi src="asset\img\Lucas.png" alt="moi" >
+      <b><p>Etudiant en BTS SIO Option SLAM</p></b>
+    </div>
+</div>
+</section>
+
+<section id="Fiche-de-competence">
+<div class="container-fiche-de-competence">
+  <div class="text">
+      <h1>Fiche de Compétence</h1>
+      <div class="container-block">
+          <a href="./asset/download//Tableau-de synthèse-ALAZARY-Lucas-Epreuve E4 - BTS SIO.xlsx" target="_blank" class="main-btn">Fiche de Compétence</a>
+        </div>
+    </div>
+    </div>
+</div>
+</section>
+
+<section id="competence" class="early">
+  <article>
+      <p class="example-left">
+        Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences 
+        Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences 
+        Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences 
+        Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences 
+        Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences 
+      </p>
+     <p class="example-right">
+      Langage Langage Langage Langage Langage Langage Langage Langage Langage Langage 
+      Langage Langage Langage Langage Langage Langage Langage Langage Langage Langage 
+      Langage Langage Langage Langage Langage Langage Langage Langage Langage Langage 
+      Langage Langage Langage Langage Langage Langage Langage Langage Langage Langage 
+      Langage Langage Langage Langage Langage Langage Langage Langage Langage Langage   
+     </p>
+    </article>
+
+
+<div  class="container-competence">
+  <div class="competence-item">
+    <b><p>HTML</p></b>
+    <img class="logo-competence" src="asset/svg/html.svg" width="100px" height="100px" alt="html">
+  
+    <progress class="progress-bar-html" value="70" max="100"></progress>
+    <b><span id="rating">70 %</span> </b>
+  </div>
+
+  <div class="competence-item">
+    <b><p>CSS</p></b>
+    <img class="logo-competence" src="asset/svg/css.svg" width="100px" height="100px" alt="css">
+  
+    <progress class="progress-bar-css" value="50" max="100"></progress>
+    <b><span id="rating">50 %</span> </b>
+  </div>
+
+  <div class="competence-item">
+    <b><p>JavaScript</p></b>
+    <img class="logo-competence" src="asset/svg/javascript.svg" width="100px" height="100px" alt="javascript">
+
+    <progress class="progress-bar-js" value="20" max="100"></progress>
+    <b><span id="rating">20 %</span> </b>
+  </div>
+
+    <div class="competence-item">
+    <b><p>C Sharp</p></b>
+    <img class="logo-competence" src="asset/svg/csharp.svg" width="100px" height="100px" alt="csharp">
+
+    <progress class="progress-bar-csharp" value="40" max="100"></progress>
+    <b><span id="rating">40 %</span> </b>
+  </div>
+
+  <div class="competence-item">
+    <b><p>PHP</p></b>
+    <img class="logo-competence" src="asset/svg/php.svg" width="100px" height="100px" alt="php">
+  
+    <progress class="progress-bar-php" value="40" max="100"></progress>
+    <b><span id="rating">40 %</span> </b>
+  </div>
+</div>
+
+<div class="container-competence">
+  <div class="competence-item">
+    <b><p>JAVA</p></b>
+    <img class="logo-competence" src="asset/svg/java.svg" width="100px" height="100px" alt="java">
+  
+    <progress class="progress-bar-java" value="10" max="100"></progress>
+    <b><span id="rating">10 %</span> </b>
+  </div>
+
+  <div class="competence-item">
+    <b><p>PYTHON</p></b>
+    <img class="logo-competence" src="asset/svg/python.svg" width="100px" height="100px" alt="python">
+  
+    <progress class="progress-bar-python" value="20" max="100"></progress>
+    <b><span id="rating">20 %</span> </b>
+  </div>
+
+  <div class="competence-item">
+    <b><p>MySql</p></b>
+    <img class="logo-competence" src="asset/svg/mysql.svg" width="100px" height="100px" alt="mysql">
+
+    <progress class="progress-bar-mysql" value="40" max="100"></progress>
+    <b><span id="rating">40 %</span> </b>
+  </div>
+
+    <div class="competence-item">
+    <b><p>React</p></b>
+    <img class="logo-competence" src="asset/svg/reactjs.svg" width="100px" height="100px" alt="react">
+
+    <progress class="progress-bar-react" value="10" max="100"></progress>
+    <b><span id="rating">10 %</span> </b>
+  </div>
+
+  <div class="competence-item">
+    <b><p>Powershell</p></b>
+    <img class="logo-competence" src="asset/svg/powershell.svg" width="100px" height="100px" alt="powershell">
+  
+    <progress class="progress-bar-powershell" value="10" max="100"></progress>
+    <b><span id="rating">10 %</span> </b>
+  </div>
+</div>
+</section>
+
+<section class="early">
+  <article>
+      <p class="example-left">
+        Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences 
+        Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences 
+        Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences 
+        Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences 
+        Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences  
+      </p>
+      <p class="example-right">  
+      programme programme programme programme programme programme programme programme programme programme 
+      programme programme programme programme programme programme programme programme programme programme 
+      programme programme programme programme programme programme programme programme programme programme 
+      programme programme programme programme programme programme programme programme programme programme 
+      programme programme programme programme programme programme programme programme programme programme 
+      programme programme programme programme programme programme programme programme programme programme   
+      </p>
+    </article>
+
+    <div class="container-competence">
+      <div class="competence-item">
+        <b><p>Visual Studio Code</p></b>
+        <img class="logo-competence" src="asset/svg/visualstudiocode.svg" width="100px" height="100px" alt="visualstudiocode">
+      
+        <progress class="progress-bar-visualstudiocode" value="60" max="100"></progress>
+        <b><span id="rating">60 %</span> </b>
+      </div>
+
+      <div class="competence-item">
+        <b><p>GitHub</p></b>
+        <img class="logo-competence" src="asset/svg/github.svg" width="100px" height="100px" alt="github">
+      
+        <progress class="progress-bar-github" value="50" max="100"></progress>
+        <b><span id="rating">50 %</span> </b>
+      </div>
+
+      <div class="competence-item">
+        <b><p>Intellij</p></b>
+        <img class="logo-competence" src="asset/svg/intellij.svg" width="100px" height="100px" alt="intellij">
+      
+        <progress class="progress-bar-intellij" value="20" max="100"></progress>
+        <b><span id="rating">20 %</span> </b>
+      </div>
+
+      <div class="competence-item">
+        <b><p>Visual Studio</p></b>
+        <img class="logo-competence" src="asset/svg/visualstudio.svg" width="100px" height="100px" alt="visualstudio">
+      
+        <progress class="progress-bar-visualstudio" value="60" max="100"></progress>
+        <b><span id="rating">60 %</span> </b>
+      </div>
+
+      <div class="competence-item">
+        <b><p>Virtual Box</p></b>
+        <img class="logo-competence" src="asset/img/Virtualbox_logo.png" width="100px" height="100px" alt="virtualbox">
+      
+        <progress class="progress-bar-virtualbox" value="50" max="100"></progress>
+        <b><span id="rating">50 %</span> </b>
+      </div>
+    </section>
+  </div>
+
+
+
+
+
+
+<section id="Futur">
+<div class="center1">
+  <div class="container-futur">
+    <h1>Projet Futur</h1>
+    <p>Je souhaite poursuivre mes études en faisant un Bachelor RPI <br>
+      (responsable de Projets Informatiques) <br>
+      en 1 année suivi d'un Mastère ESI <br>(Expert en Systèmes d’Information sur deux années.)</p>
+</div>
+</div>
+</section>
+
+<section id="ubisolutions">
+<div class="container-ubi">
+J'ai effectuer mes 2 ans d'alternace au seins de l'entreprise Ubisolutions Spécialiste de la Traçabilité basées sur les technologies RFID
+
+
+Voici les taches les plus importante que j'ai pus realiser 
+
+réparation de PDA 
+<a href="https://ubisolutions.net/" target="_blank" class="main-btn">Ubisolutions</a>
+
+<div class="container-ubi-img">
+
+
+  <img class="image-ubi" src="asset\svg\ubisolutions.svg" alt="Votre image">
+</div>
+</div>
+</section>
+
+
+
+<script>
+  window.addEventListener('scroll', function() {
+    var image = document.querySelector('.image-ubi');
+    var scrollY = window.scrollY || window.pageYOffset; // Position de défilement verticale
+  
+    var rotation = scrollY / 10; // Vitesse de rotation (vous pouvez ajuster le facteur 10 selon vos préférences)
+    image.style.transform = 'rotate(' + rotation + 'deg)';
+  });
+  </script>
+
+<section id="Projet">
+<div class="center2">
+      <h1>Projet</h1>
+      <div class="container-projet">
+        Projet N°1<a href="asset\download\PI-HOLE AP1.pdf" target="_blank" class="main-btn">PI-HOLE Virtual Box</a>
+        Projet N°2<a href="asset\download\CHATBOX AP2.pdf" target="_blank" class="main-btn">CHATBOX HTML CSS JAVASCRIPT</a>
+        Projet N°3<a href="asset\download\GSBPharma AP3.pdf" target="_blank" class="main-btn">GSBPharma C#</a>
+        Projet N°4<a href="asset\download\ZZwarehouse AP4.pdf" target="_blank" class="main-btn">ZZwarehouse PHP</a>
+        <br>
+        <!-- <a href="./asset/download/Fiche-de-competence.pdf" target="_blank" class="main-btn">Fiche descriptive Epreuve AP</a> -->
+      </div>
+    </div>
+    </section>
+
+<section id="La-veille">
+    <div class="center1">
+        <h1>La Veille Technologique</h1>
+        <div class="container-block">
+          <br>
+          -Qu'est-ce que la veille technologique ?<br>
+          La veille technologique, élément de la veille stratégique, <br>
+          consiste à surveiller les évolutions techniques, les innovations dans un secteur d’activité donnée. <br>
+          La veille technologique comprend notamment la surveillance, la collecte, <br>
+          le partage et la diffusion d’information permettant d’anticiper ou de s’informer sur des changements en matière de recherche,<br>
+          développement, brevet, lancement de nouveaux produits, matériaux, processus, concepts, innovation de fabrication, etc…. <br>
+          Cela a pour but d’évaluer l’impact sur l’environnement et l’organisation.<br><br>
+          <br>
+          <a href="#Ma-veille" class="main-btn">Ma Veille Technologique</a>
+        </div>
+      </div>
+</section>
+
+
+
+<section id="Ma-veille">
+  <div class="container-veille">
+    <div class="text">
+        <h1>Ma Veille Technologique</h1>
+        <div class="container-block">
+
+          
+
+          <div style="position: relative; width: 100%; height: 0%; padding-top: 56.2225%;
+          padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+          border-radius: 8px; will-change: transform;">
+           <iframe loading="lazy" style="position: absolute; width: 100%; height: 80%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+             src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGAu5g1ruU&#x2F;_jnn7B-gaqR67MAvIWexQA&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+           </iframe>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+</body>
+<footer class="footer">
+  <div>
+    <div class="hover-footer">
+    <a href="https://github.com/Luucaaaas" target="_blank">
+      <img src="asset/svg/github-white.svg" height="50px" width="50px" alt="Image">
+      <span>GitHub</span>
+    </a>
+  </div>
+  </div>
+  <div>
+    <div class="hover-footer">
+    <a href="https://www.linkedin.com/in/lucas-alazary-a771b0232/" target="_blank">
+      <img src="asset/svg/linkedin-white.svg" height="50px" width="50px" alt="Image">
+      <span>LinkedIn</span>
+    </a>
+  </div>
+  </div>
+  <div>
+    <div class="hover-footer">
+    <a href="https://www.google.com/maps/place/Rillieux-la-Pape" target="_blank">
+      <img src="asset/svg/location.svg" height="50px" width="50px" alt="Image">
+    <span>Rillieux la pape</span>
+    </a>
+  </div>
+  </div>
+  <div>
+    <div class="hover-footer">
+    <img src="asset/svg/mail.svg" height="50px" width="50px" alt="Image">
+    <a href="mailto:lucasalazary@gmail.com">lucasalazary@gmail.com</a>
+  </div>
+  </div>
+</footer>
+</html>
+
