@@ -351,7 +351,7 @@ réparation de PDA
 <div class="container-ubi-img">
 
 
-  <img class="image-ubi" src="asset\svg\ubisolutions.svg" alt="Votre image">
+  <img class="image-ubi" src="asset\svg\ubisolutions.svg" alt="ubi">
 </div>
 </div>
 </section>
@@ -361,26 +361,120 @@ réparation de PDA
 <script>
   window.addEventListener('scroll', function() {
     var image = document.querySelector('.image-ubi');
-    var scrollY = window.scrollY || window.pageYOffset; // Position de défilement verticale
+    var scrollY = window.scrollY || window.pageYOffset; 
   
-    var rotation = scrollY / 10; // Vitesse de rotation (vous pouvez ajuster le facteur 10 selon vos préférences)
+    var rotation = scrollY / 10;
     image.style.transform = 'rotate(' + rotation + 'deg)';
   });
   </script>
 
 <section id="Projet">
-<div class="center2">
       <h1>Projet</h1>
-      <div class="container-projet">
-        Projet N°1<a href="asset\download\PI-HOLE AP1.pdf" target="_blank" class="main-btn">PI-HOLE Virtual Box</a>
-        Projet N°2<a href="asset\download\CHATBOX AP2.pdf" target="_blank" class="main-btn">CHATBOX HTML CSS JAVASCRIPT</a>
-        Projet N°3<a href="asset\download\GSBPharma AP3.pdf" target="_blank" class="main-btn">GSBPharma C#</a>
-        Projet N°4<a href="asset\download\ZZwarehouse AP4.pdf" target="_blank" class="main-btn">ZZwarehouse PHP</a>
-        <br>
-        <!-- <a href="./asset/download/Fiche-de-competence.pdf" target="_blank" class="main-btn">Fiche descriptive Epreuve AP</a> -->
+
+
+
+
+  <div class="center3">
+
+    <div class="container-projet">
+
+      <div class="card" onclick="window.open('asset/download/PI-HOLE-AP1.pdf')">
+        <img class="background" src="asset/img/Pi-hole.png" width="1280px" height="800px"alt="">
+          <div class="card-content">
+            <div class="profile-image">
+              <img src="asset\svg\info.svg" width="50px" height="50px">
+            </div>
+
+            <h3 class="title">PI-HOLE</h3>
+          </div>
+          <div class="backdrop"></div>
+        </div>
+
+        <div class="card" onclick="window.open('asset/download/CHATBOX-AP2.pdf')">
+          <img class="background" src="asset\img\Chatbox.png" alt="">
+
+        <div class="card-content">
+          <div class="profile-image">
+            <img src="asset\svg\info.svg" width="50px" height="50px" alt="">
+          </div>
+
+          <h3 class="title">CHATBOX</h3>
+        </div>
+        <div class="backdrop"></div>
+      </div>
+
+      <div class="card" onclick="window.open('asset/download/GSBPharma-AP3.pdf')">
+        <img class="background" src="asset\img\gsbpharma.png" alt="">
+
+        <div class="card-content">
+          <div class="profile-image">
+            <a> <img src="asset\svg\info.svg" width="50px" height="50px" alt=""></a>
+          </div>
+
+          <h3 class="title">GSBPharma</h3>
+        </div>
+        <div class="backdrop"></div>
+      </div>
+
+      <div class="card" onclick="window.open('asset/download/ZZwarehouse-AP4.pdf')">
+        <img class="background" src="asset\img\ZZWarehouse.png" alt="">
+
+        <div class="card-content">
+          <div class="profile-image">
+            <img src="asset\svg\info.svg" width="50px" height="50px" alt="">
+
+          </div>
+
+          <h3 class="title">ZZwarehouse</h3>
+        </div>
+        <div class="backdrop"></div>
+      </div>
+
+      <div class="card" onclick="window.open('https://zzshop.vercel.app/')">
+       
+        <img class="background" src="asset\img\zzshop.png" alt="">
+
+        <div class="card-content">
+          <div class="profile-image">
+            <img src="asset\svg\info.svg" width="50px" height="50px" alt="">
+          </div>
+
+          <h3 class="title">ZZShopp</h3>
+        </div>
+        <div class="backdrop"></div>
       </div>
     </div>
-    </section>
+  </div>
+
+    <script>
+      const cardsContainer = document.querySelector(".container");
+
+cardsContainer.addEventListener("click", (e) => {
+  const target = e.target.closest(".card");
+
+  if (!target) return;
+
+  cardsContainer.querySelectorAll(".card").forEach((card) => {
+    card.classList.remove("active");
+  });
+
+  target.classList.add("active");
+});
+    </script>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <section id="La-veille">
     <div class="center1">
@@ -450,8 +544,10 @@ réparation de PDA
   </div>
   <div>
     <div class="hover-footer">
-    <img src="asset/svg/mail.svg" height="50px" width="50px" alt="Image">
-    <a href="mailto:lucasalazary@gmail.com">lucasalazary@gmail.com</a>
+
+    <a href="mailto:lucasalazary@gmail.com">
+      <img src="asset/svg/mail.svg" height="50px" width="50px" alt="Image">
+      <span>lucasalazary@gmail.com</span>
   </div>
   </div>
 </footer>
